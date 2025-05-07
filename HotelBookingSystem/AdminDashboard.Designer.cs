@@ -38,17 +38,17 @@ namespace HotelBookingSystem
             this.AdminDashboard_ManageHotelsBtn = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.manageUsersForm2 = new HotelBookingSystem.ManageUsersForm();
-            this.manageReview2 = new HotelBookingSystem.ManageReview();
-            this.managePayment3 = new HotelBookingSystem.ManagePayment();
-            this.manageHotelForm1 = new HotelBookingSystem.ManageHotelForm();
             this.manageUsersForm1 = new HotelBookingSystem.ManageUsersForm();
             this.managePayment2 = new HotelBookingSystem.ManagePayment();
             this.managePayment1 = new HotelBookingSystem.ManagePayment();
             this.manageReview1 = new HotelBookingSystem.ManageReview();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.overview1 = new HotelBookingSystem.Overview();
+            this.manageUsersForm2 = new HotelBookingSystem.ManageUsersForm();
+            this.manageReview2 = new HotelBookingSystem.ManageReview();
+            this.managePayment3 = new HotelBookingSystem.ManagePayment();
+            this.manageHotelForm1 = new HotelBookingSystem.ManageHotelForm();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -144,6 +144,7 @@ namespace HotelBookingSystem
             this.button4.TabIndex = 13;
             this.button4.Text = "Overview";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel2
             // 
@@ -158,57 +159,6 @@ namespace HotelBookingSystem
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(761, 64);
             this.panel2.TabIndex = 2;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(711, 8);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 32);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "X";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(210, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(314, 32);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Hotel Booking System";
-            // 
-            // manageUsersForm2
-            // 
-            this.manageUsersForm2.Location = new System.Drawing.Point(220, 42);
-            this.manageUsersForm2.Name = "manageUsersForm2";
-            this.manageUsersForm2.Size = new System.Drawing.Size(758, 450);
-            this.manageUsersForm2.TabIndex = 6;
-            // 
-            // manageReview2
-            // 
-            this.manageReview2.Location = new System.Drawing.Point(220, 45);
-            this.manageReview2.Name = "manageReview2";
-            this.manageReview2.Size = new System.Drawing.Size(758, 450);
-            this.manageReview2.TabIndex = 5;
-            // 
-            // managePayment3
-            // 
-            this.managePayment3.Location = new System.Drawing.Point(220, 45);
-            this.managePayment3.Name = "managePayment3";
-            this.managePayment3.Size = new System.Drawing.Size(758, 450);
-            this.managePayment3.TabIndex = 4;
-            // 
-            // manageHotelForm1
-            // 
-            this.manageHotelForm1.Location = new System.Drawing.Point(220, 45);
-            this.manageHotelForm1.Name = "manageHotelForm1";
-            this.manageHotelForm1.Size = new System.Drawing.Size(761, 450);
-            this.manageHotelForm1.TabIndex = 3;
             // 
             // manageUsersForm1
             // 
@@ -238,12 +188,63 @@ namespace HotelBookingSystem
             this.manageReview1.Size = new System.Drawing.Size(750, 450);
             this.manageReview1.TabIndex = 16;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(711, 8);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 32);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "X";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(210, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(314, 32);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Hotel Booking System";
+            // 
             // overview1
             // 
             this.overview1.Location = new System.Drawing.Point(220, 42);
             this.overview1.Name = "overview1";
             this.overview1.Size = new System.Drawing.Size(767, 450);
             this.overview1.TabIndex = 7;
+            // 
+            // manageUsersForm2
+            // 
+            this.manageUsersForm2.Location = new System.Drawing.Point(220, 42);
+            this.manageUsersForm2.Name = "manageUsersForm2";
+            this.manageUsersForm2.Size = new System.Drawing.Size(758, 450);
+            this.manageUsersForm2.TabIndex = 6;
+            // 
+            // manageReview2
+            // 
+            this.manageReview2.Location = new System.Drawing.Point(220, 45);
+            this.manageReview2.Name = "manageReview2";
+            this.manageReview2.Size = new System.Drawing.Size(758, 450);
+            this.manageReview2.TabIndex = 5;
+            // 
+            // managePayment3
+            // 
+            this.managePayment3.Location = new System.Drawing.Point(220, 45);
+            this.managePayment3.Name = "managePayment3";
+            this.managePayment3.Size = new System.Drawing.Size(758, 450);
+            this.managePayment3.TabIndex = 4;
+            // 
+            // manageHotelForm1
+            // 
+            this.manageHotelForm1.Location = new System.Drawing.Point(220, 45);
+            this.manageHotelForm1.Name = "manageHotelForm1";
+            this.manageHotelForm1.Size = new System.Drawing.Size(761, 450);
+            this.manageHotelForm1.TabIndex = 3;
             // 
             // AdminDashboard
             // 

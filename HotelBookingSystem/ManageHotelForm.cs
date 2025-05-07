@@ -147,6 +147,7 @@ namespace HotelBookingSystem
             ManageHotels_HotelName.Text = "";
             ManageHotels_Package.Text = "";
             ManageHotels_City.Text = "";
+            ManageHotels_Picture.Image = null;
         }
         string ManageHotels_ID = "";
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

@@ -28,6 +28,7 @@ namespace HotelBookingSystem
             manageUsersForm2.Visible = false;
             managePayment3.Visible = false;
             manageReview2.Visible = false;
+            overview1.Visible = false;
 
         }
 
@@ -42,6 +43,7 @@ namespace HotelBookingSystem
             manageUsersForm2.Visible = true;
             managePayment3.Visible = false;
             manageReview2.Visible = false;
+            overview1.Visible = false;
         }
 
         private void AdminDashboard_Load(object sender, EventArgs e)
@@ -55,6 +57,7 @@ namespace HotelBookingSystem
             manageUsersForm2.Visible = false;
             managePayment3.Visible = true;
             manageReview2.Visible = false;
+            overview1.Visible = false;
         }
 
         private void AdminDashboard_ManageReviewsBtn_Click(object sender, EventArgs e)
@@ -68,6 +71,16 @@ namespace HotelBookingSystem
             manageUsersForm2.Visible = false;
             managePayment3.Visible = false;
             manageReview2.Visible = true;
+            overview1.Visible = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            manageHotelForm1.Visible = false;
+            manageUsersForm2.Visible = false;
+            managePayment3.Visible = false;
+            manageReview2.Visible = false;
+            overview1.Visible = true;
         }
     }
 }
